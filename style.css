@@ -1,0 +1,35 @@
+* {
+  background-color: powderblue;
+  border-width: 3px;
+}
+nav {
+  text-align: center;
+  margin-top: 150px;
+}
+.container {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+#name {
+  text-transform: capitalize;
+  margin: 15px;
+}
+#email {
+  margin-right: 15px;
+}
+
+#Password {
+  margin: 15px;
+  padding-right: 20px;
+}
+
+.button {
+  padding-top: 250px;
+}
+#submit {
+  color: black;
+  background-color: green;
+}
+#reset {
+  background-color: red;
+}
