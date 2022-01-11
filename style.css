@@ -3,7 +3,7 @@
   border-width: 3px;
 }
 nav {
-  text-align: center;
+  text-align: left;
   margin-top: 150px;
 }
 .container {
@@ -13,9 +13,11 @@ nav {
 #name {
   text-transform: capitalize;
   margin: 15px;
+  margin-left: 54px;
 }
 #email {
   margin-right: 15px;
+  margin-left: 52px;
 }
 
 #Password {
