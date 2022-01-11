@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="signupform.css">
+</head>
+<body>
+    <nav>
+        <img src="bacancy.png" alt="company" id="image1" class="center">
+        <h2 class="h2">Signup Form</h2>
+        <form action="post">    
+            <div class="container">
+                <label for="Name"><h4>Name : </h4></label>
+                <input type="text" placeholder="enter the name" id="unamw" required>
+                <br>
+                <label for="DOB"><h4>Date of Birth : </h4></label>
+                <input type="text" placeholder="dd/mm/yyyy" id="DOB">
+                <br>
+                <label for="gender" id="gender"><h4>Gender : </h4></label>
+                <input type="radio" checked="checked">Male
+                <input type="radio">Femle
+                <br>
+                <label for="email"><h4>Email Address :</h4></label>
+                <input type="text" placeholder="enter the email address" id="email" required>
+                <br>
+                <label for="password"><h4>Password : </h4></label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <br>
+                <label for="location"><h4>Location : </h4></label><br>
+                <select name="Location" id="location">
+                    <option value="Location1"></option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select><br>
+
+                <label>
+                    <input type="checkbox" checked="checked" id="term"> I'm agree with all <a href="#">terms and conditions</a>
+                </label><br>
+
+                <button type="button" class="btn btn-info" id="submit">Signup</button>
+                <button type="reset" class="btn btn-outline-info">Cancel</button>
+
+            </div>
+        </form>
+        <div class="row">
+            <form action="get" id="first">
+                <div class="col-md-6">
+                    <h5>Background Image</h5>
+                </div>
+            </form>
+            <form action="get">
+                <div class="col-md-6">
+                    <picture>
+                        <!--<source src="/bacancy.png">-->
+                        <img src="/bacancy.png" alt="Photo">
+                    </picture>
+                </div>         
+            </form>
+        </div>
+    </nav>
+</body>
+</html>
