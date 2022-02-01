@@ -1,0 +1,50 @@
+* {
+  overflow-x: hidden;
+}
+.phase1 {
+  background-color: aliceblue;
+  display: block;
+  color: black;
+  padding: 70px;
+}
+.menu-top {
+  list-style-type: none;
+}
+.menu1,
+.menu2,
+.menu3,
+.menu4,
+.menu5 {
+  float: left;
+  padding-left: initial;
+}
+li a {
+  text-transform: none;
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 8px;
+}
+
+.desk {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  padding-top: 150px;
+}
+.logout {
+  margin-top: 500px;
+}
+.button1 {
+  border: white;
+  border-radius: 50px;
+  color: white;
+  background-color: rgb(238, 73, 222);
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+}
