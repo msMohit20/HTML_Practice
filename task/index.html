@@ -1,60 +1,196 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank-trading</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Bank-Trading</title>
 </head>
 <body>
-    <section class="main">
-        <div class="row">
-            <div class="col-md-2">
-                <!--<img src="/bacancy.png" alt="Company Name">
-                --><ul class="desk">
-                    <li><i class="fas fa-home">Dashboard</i></li>
-                    <li><i class="fas fa-coins">Transaction</i></li>
-                    <li><i class="fas fa-credit-card">Cards</i></li>
-                    <li><i class="fas fa-percent">Offers</i></li>
-                    <li><i class="fas fa-hand-holding-usd">Investments</i></li>
-                    <li class="logout"><i class="fas fa-sign-out-alt"> logout</i></li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <div class="phase1">
-                    <div class="col-md-8">
-                        <i class="fas fa-search"></i>
-                        <input type="search" name="Searchtext" id="Searchtext" size="70" placeholder="search transaction, offers, investments etc.....">
-                        <ul class="menu-top">
-                            <li class="menu1"> <a href="#">feedback</a></li>
-                            <li class="menu2"> <a href="#1"> contact</a></li>
-                            <li class="menu3"> <a href="#2"> help</a></li>
-                            <li class="menu4"><a href=""><i class="fas fa-bell"></i></a></li>
-                            <li class="menu5"><a href=""><img src="image.png" alt="Avatar" class="avatar"></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row container">
-                    <div class="col-md-6">
-                        <img src="/bacancy.png" alt="bacancy">
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Live Life Confidentaly</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="button1" type="button" > Explore Insurance</button>
-                    </div>
-                </div>
-                <div class="">
+<div class="parent-main row">
+    <div class="sidebar col-md-2">
+        <div class="logo"> <a href="#default" class="logo">
+            <img src="logo.png" height="100px" width="100px" /> </div> 
+        <a href="#"><i class="fa fa-fw fa-home" style="color: #F42879;"></i> Home</a>
+        <a href="#"><i class="fa fa-exchange" style="color: #F42879;"></i> Transactions</a>
+        <a href="#"><i class="fa fa-fw fa-credit-card-alt" style="color: #F42879;"></i> Cards</a>
+        <a href="#"><i class="fa fa-percent" style="color: #F42879;"></i> Offers</a>
+        <a href="#"><i class="fa fa-bank" style="color: #F42879;"></i> Investment</a>
+            <a href="#"><i class="fa fa-sign-out" style="color: #F42879;"></i> Logout</a>
 
+    </div>
+    <div class="page-container p-4 col-md-8">
+        <div class="header">
+            
+                <!--search-box-->
+                <div class="align-items-center d-flex p-3" style="width: 930px; height: 50px; background: white; border-radius: 20px;  box-shadow: 10px 10px 15px #aaaaaa; "> <i class="fa fa-search mx-3"></i> 
+                    <input type="text" class="form-control form-input" placeholder="Search Transactions, Offers, Investments, etc..." style="width: 50%;border: 0;"> 
                 </div>
-            </div>
-            <div class="col-md-2">
-
-            </div>
+                <!--Menu-->
+                <div class="d-flex align-items-center">
+                    <ul style="float: right;">
+                        <li><a href="#">Contact</a></li>
+                        <li ><a href="#">Feedback</a></li> 
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i></a> </li>
+                        <li> <a href="#"> <img src="sidelogo.png" height="40px" width="40px" /></a></li>
+                    </ul>
+                </div> 
         </div>
-    </section>
+        
+        <!--Card-->
+        <div class="main-content mt-5 ">
+            <div class="insight">
+                    <div class="intro">
+                        <div>
+                            <img src="lady.png" alt="lady-with-laptop" style="height: 220px; width: 350px;">
+                        </div>
+                        <div style="margin-top: 35px;">
+                            <h2 style="display: flex;color: #363565;justify-content: center;">Live Life Confidentaly</h2>
+                            <p style="display: flex; justify-content: center;">
+                                Chase yours dreams and finish yours plans by spending money in insurance
+                            </p>
+                            <button class="button" type="submit" style="margin-left: 130px;">Explore Insurance</button>
+                        </div>  
+                    </div>
+            </div>
+            
+            <div class="mycard">
+                    <div class="card-main">
+                        <div class="label">
+                            <p style="color: grey; padding: 10px; margin: 10px;">My Card</p>
+                            <button class="buttonplus"><i class="fa fa-plus fa-1x"></i> </button>
+                        </div>
+                        <div class="cardimg">
+                            <img src="card.png" alt="card image">
+                        </div>
+                        <div class="l-trans">
+                            <div class="label"> 
+                                <p style="color: grey; padding: 10px; margin: 10px;">Latest Transactions</p>
+                                <button class="buttonarrow"><i class="fa fa-arrow-right fa-1x"></i></button>
+                            </div>
+                            <div class="d-flex flex-column m-3"> 
+                              <div class="d-flex flex-row justify-content-evenly align-items-center m-2 p-2"> 
+                                <span class="border" style="margin: -5px; margin-inline-end: 10px;">  <i class="fa fas fa-shopping-basket" style="color: #F42879; "></i> </span>
+                                <div class="d-flex flex-column">
+                                        <label>Supreme Shirt</label>
+                                 <label>11nov,2020 11:00 pm</label>
+                                </div>
+                                <label style="color: #F42879;"> - 15,00 $  </label>
+                                <label> > </label>
+                            </div>
+
+ <div class="d-flex flex-row justify-content-evenly align-items-center m-2 p-2"> 
+                                <span class="border" style="margin: -5px; margin-inline-end: 10px;">  <i class="fa fas fa-cc-visa" style="color: #F42879;"></i> </span>
+                                <div class="d-flex flex-column">
+                                        <label>Salary</label>
+                                 <label>11nov,2020 11:00 pm</label>
+                                </div>
+                                <label style="color: #35BB84;"> + 249,69 $  </label>
+                                <label> > </label>
+                            </div>
+
+ <div class="d-flex flex-row justify-content-evenly align-items-center m-2 p-2"> 
+                               <span class="border" style="margin: -5px; margin-inline-end: 10px;">   <i class="fa fas fa-medkit" style="color: #F42879;"></i> </span>
+                                <div class="d-flex flex-column">
+                                        <label>Medical Checkup</label>
+                                 <label>11nov,2020 11:00 pm</label>
+                                </div>
+                                <label style="color: #F42879;"> - 39,50 $  </label>
+                                <label> > </label>
+                            </div>
+
+ <div class="d-flex flex-row justify-content-evenly align-items-center m-2 p-2"> 
+                             <span class="border" style="margin: -5px; margin-inline-end: 10px;">      <i class="fa fa-cutlery" style="color: #F42879;"></i> </span>
+                                <div class="d-flex flex-column">
+                                        <label>PizzaHot</label>
+                                 <label>11nov,2020 11:00 pm</label>
+                                </div>
+                                <label style="color: #F42879;"> - 6,00 $  </label>
+                                <label> > </label>
+                            </div>
+
+                             <div class="d-flex flex-row justify-content-evenly align-items-center m-2 p-2"> 
+                              <span class="border" style="margin: -5px; margin-inline-end: 10px;">     <i class="fa fas fa-train" style="color: #F42879;"></i> </span>
+                                <div class="d-flex flex-column">
+                                        <label>Supreme Shirt</label>
+                                 <label>11nov,2020 11:00 pm</label>
+                                </div>
+                                <label style="color: #F42879;"> - 15,00 $  </label>
+                                <label> > </label>
+                            </div>
+
+                             <div class="d-flex flex-row justify-content-evenly align-items-center m-2 p-2"> 
+                                 <span class="border" style="margin: -5px; margin-inline-end: 10px;">   <i class="fa fas fa-cc-visa" style="color: #F42879;"></i> </span>
+                                <div class="d-flex flex-column">
+                                        <label>Capital One</label>
+                                 <label>11nov,2020 11:00 pm</label>
+                                </div>
+                                <label style="color: #35BB84;"> - 1300,00 $  </label>
+                                <label> > </label>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+       </div>  
+       <div class="chart-main">
+                <div class="linegraph row">
+                    <div class="col-sm-3">
+                      <img src="/HTML_CSS_BOOTSTRAP_TASK/chart.png" alt="chart">
+                    </div>
+                    <div class="col-sm-3">
+                      <img src="/HTML_CSS_BOOTSTRAP_TASK/chart.png" alt="chart"">
+                     </div>
+                    <div class="col-sm-3">
+                      <img src="/HTML_CSS_BOOTSTRAP_TASK/chart.png" alt="chart">
+                    </div>
+                </div>
+                <div class="bargraph"> 
+                  <label style="color: grey; font-size: medium; margin-bottom: 10px;">Cash Flow</label>
+                  <div style="height: 10px; width: 10px; margin-left: 2px; padding-left: 9px;">
+                    <p style="background-color: #902C2D">Received</p>
+                    <p style="background-color: #283250;">Spend</p></div>
+                  </div> 
+                  <div id="myChart"></div>
+                </div>
+
+        </div>
+     </div>
+</div>
+
 </body>
-</html>
+<script>
+  var myConfig = {
+        type: "bar",
+        plot: {
+          stacked: true
+        },
+        series: [{
+          values: [20, 40, 25, 50, 15, 45, 33, 34],
+          stack: 1
+        },
+        {
+          values: [5, 30, 21, 18, 59, 50, 28, 33],
+          stack: 1
+        },
+        {
+          values: [30, 5, 18, 21, 33, 41, 29, 15],
+          stack: 2
+        }
+      ]
+  };
+        
+  zingchart.render({
+    id: 'myChart',
+    data: myConfig,
+    height: "100%",
+    width: "100%"
+  });
+</script>
+</html> 
